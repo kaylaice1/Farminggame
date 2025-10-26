@@ -1,0 +1,22 @@
+# Godot 4+ standard .gitignore
+
+# Godot-specific cache and import data
+.import/
+.godot/
+
+# Export configurations (optional to ignore)
+export.cfg
+export_presets.cfg
+
+# Logs, backups, and temp files
+*.log
+*.tmp
+*.bak
+*.import
+*.translation
+
+# System / IDE junk
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
