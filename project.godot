@@ -19,6 +19,7 @@ config/icon="res://icon.svg"
 
 ToolManager="*res://scripts/globals/tool_manager.gd"
 DayAndNightCycleManager="*res://scripts/globals/day_and_night_cycle_manager.gd"
+InventoryManager="*res://scripts/globals/inventory_manager.gd"
 
 [display]
 
@@ -26,7 +27,7 @@ window/size/viewport_width=640
 window/size/viewport_height=360
 window/size/window_width_override=1280
 window/size/window_height_override=720
-window/stretch/mode="viewport"
+window/stretch/mode="canvas_items"
 window/stretch/aspect="keep_height"
 window/stretch/scale_mode="integer"
 
@@ -42,6 +43,7 @@ folder_colors={
 [global_group]
 
 player=""
+navigation_polygon_source_geometry_group=""
 
 [input]
 
@@ -88,11 +90,14 @@ release_tool={
 [layer_names]
 
 2d_physics/layer_1="Ground"
+2d_navigation/layer_1="Chicken Nav"
 2d_physics/layer_2="Player"
+2d_navigation/layer_2="Cow Nav"
 2d_physics/layer_3="Interactable"
 2d_physics/layer_4="Tool"
 2d_physics/layer_5="Object"
 2d_physics/layer_6="Collectable"
+2d_physics/layer_7="NPC"
 
 [rendering]
 

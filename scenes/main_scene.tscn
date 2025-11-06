@@ -20,6 +20,7 @@ position = Vector2(-35, 12)
 
 [node name="Player" parent="GameRoot" instance=ExtResource("3_pu3yx")]
 position = Vector2(678, 297)
+current_tool = 0
 
 [node name="Camera2D" type="Camera2D" parent="GameRoot/Player"]
 
