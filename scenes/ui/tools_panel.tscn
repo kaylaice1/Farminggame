@@ -2,8 +2,8 @@
 
 [ext_resource type="Theme" uid="uid://cge6cloqnwp17" path="res://scenes/ui/game_ui_theme.tres" id="1_2yiqu"]
 [ext_resource type="Script" uid="uid://6nju263irvxd" path="res://scenes/ui/tools_panel.gd" id="2_0jxvs"]
-[ext_resource type="Texture2D" uid="uid://bf7fcrpyw6fjy" path="res://assets/game/objects/basic_tools_and_materials.png" id="2_a7ivs"]
-[ext_resource type="Texture2D" uid="uid://bqfjj40wmlmqx" path="res://assets/game/objects/basic_plants.png" id="3_0jxvs"]
+[ext_resource type="Texture2D" uid="uid://cs8kqf0ul0m3o" path="res://assets/game/objects/basic_tools_and_materials.png" id="2_a7ivs"]
+[ext_resource type="Texture2D" uid="uid://qfbj8gt8egka" path="res://assets/game/objects/basic_plants.png" id="3_0jxvs"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_gbtgy"]
 atlas = ExtResource("2_a7ivs")

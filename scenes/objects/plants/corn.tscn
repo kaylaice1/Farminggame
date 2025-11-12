@@ -1,11 +1,13 @@
-[gd_scene load_steps=8 format=3 uid="uid://c0tranbmevejj"]
+[gd_scene load_steps=10 format=3 uid="uid://c0tranbmevejj"]
 
 [ext_resource type="Script" uid="uid://d3hcwcvrc65jm" path="res://scenes/objects/plants/corn.gd" id="1_hgaca"]
-[ext_resource type="Texture2D" uid="uid://bqfjj40wmlmqx" path="res://assets/game/objects/basic_plants.png" id="1_hm4is"]
+[ext_resource type="Texture2D" uid="uid://qfbj8gt8egka" path="res://assets/game/objects/basic_plants.png" id="1_hm4is"]
 [ext_resource type="PackedScene" uid="uid://76tosesgqrpv" path="res://scenes/components/hurt_component.tscn" id="2_aphyd"]
 [ext_resource type="PackedScene" uid="uid://b5wrljeo2544w" path="res://scenes/objects/plants/watering_particles.tscn" id="2_ofjf8"]
 [ext_resource type="PackedScene" uid="uid://cjty4plhigjsy" path="res://scenes/objects/plants/flowering_particles.tscn" id="3_ofjf8"]
 [ext_resource type="PackedScene" uid="uid://bhxwmb4wcqjto" path="res://scenes/objects/plants/growth_cycle_component.tscn" id="5_q3ekf"]
+[ext_resource type="PackedScene" uid="uid://uq5umboed6bs" path="res://scenes/components/save_data_component.tscn" id="7_q3ekf"]
+[ext_resource type="Resource" uid="uid://bn3ondafwkhs2" path="res://resources/scene_data_resource.tres" id="8_310os"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5ucl7"]
 size = Vector2(13, 8)
@@ -36,3 +38,6 @@ tool = 3
 position = Vector2(-0.5, 3)
 shape = SubResource("RectangleShape2D_5ucl7")
 debug_color = Color(7.31587e-06, 0.590478, 0.751757, 0.42)
+
+[node name="SaveDataComponent" parent="." instance=ExtResource("7_q3ekf")]
+save_data_resource = ExtResource("8_310os")

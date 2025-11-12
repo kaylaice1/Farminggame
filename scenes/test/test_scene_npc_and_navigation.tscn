@@ -50,7 +50,7 @@ current_tool = 1
 
 [node name="Chickens" type="Node2D" parent="."]
 
-[node name="NavigationRegion2D" type="NavigationRegion2D" parent="Chickens"]
+[node name="NavigationRegion2D" type="NavigationRegion2D" parent="Chickens" groups=["navigation_polygon_source_geometry_group"]]
 navigation_polygon = SubResource("NavigationPolygon_jtmit")
 
 [node name="Chicken" parent="Chickens" instance=ExtResource("3_31arr")]

@@ -15,11 +15,16 @@ run/main_scene="uid://uhjallilgmqc"
 config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="res://icon.svg"
 
+[audio]
+
+buses/default_bus_layout="uid://ddbrcw7c5epkp"
+
 [autoload]
 
 ToolManager="*res://scripts/globals/tool_manager.gd"
 DayAndNightCycleManager="*res://scripts/globals/day_and_night_cycle_manager.gd"
 InventoryManager="*res://scripts/globals/inventory_manager.gd"
+SaveGameManager="*res://scripts/globals/save_game_manager.gd"
 
 [display]
 
@@ -31,12 +36,19 @@ window/stretch/mode="canvas_items"
 window/stretch/aspect="keep_height"
 window/stretch/scale_mode="integer"
 
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/dialogue_manager/plugin.cfg")
+
 [file_customization]
 
 folder_colors={
 "res://assets/": "orange",
+"res://audio/": "red",
+"res://resources/": "purple",
 "res://scenes/": "green",
-"res://scripts/": "purple",
+"res://scripts/": "pink",
+"res://scripts/state_machine/": "orange",
 "res://tileset/": "yellow"
 }
 
@@ -86,6 +98,20 @@ release_tool={
 "events": [Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"button_mask":2,"position":Vector2(476, 13),"global_position":Vector2(485, 61),"factor":1.0,"button_index":2,"canceled":false,"pressed":true,"double_click":false,"script":null)
 ]
 }
+save_game={
+"deadzone": 0.2,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":80,"key_label":0,"unicode":112,"location":0,"echo":false,"script":null)
+]
+}
+show_dialogue={
+"deadzone": 0.2,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":69,"key_label":0,"unicode":101,"location":0,"echo":false,"script":null)
+]
+}
+
+[internationalization]
+
+locale/translations_pot_files=PackedStringArray("res://dialogue/conversations/guide.dialogue")
 
 [layer_names]
 
